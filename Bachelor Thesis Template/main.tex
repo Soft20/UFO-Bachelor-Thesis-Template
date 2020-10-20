@@ -10,6 +10,8 @@
 \usepackage{caption}
 \usepackage{natbib}
 \usepackage{graphicx}
+
+\setlength{\marginparwidth}{2cm} 
 \usepackage{todonotes}
 
 \usepackage{listings}
@@ -51,7 +53,7 @@
 
 
 \title{Bachelor Thesis Template}
-\author{Stephan D.}
+\author{Pernille Lørup, Stephan D.}
 \date{October 2020}
 \setcounter{page}{0}
 
@@ -64,7 +66,59 @@
 \tableofcontents
 
 \pagebreak
-\section{Graphics}
+\section{Task 1}
+
+For the first task we have found the documentation for writing a bachelor thesis on Moodle. Some PowerPoint slides are available from the previous semester introducing the requirements of the bachelor thesis. Below we will describe our findings.
+
+\subsection{The formalities}
+
+The maximum size of the bachelor project is 40 normal pages 
+(2400 characters pr. page) pr. report +20 normal pages pr. student, i.e.:
+
+\begin{itemize}
+\item One student can hand-in up to 60 pages
+\item Two students can hand-in up to 80 pages, etc
+\end{itemize}
+
+There is no absolute minimum, but teachers and
+examiners experience it to be short if it is shorter
+than 2/3 of the maximum.
+\\
+It can be written by groups as well as individual
+students. 
+
+\subsection{Relation to Internship}
+It is recommended your bachelor project builds
+on the experiences and the product of your
+company work.
+Often the internship report contains descriptions
+of the company and the work you did. You can
+reuse those parts if you state it clearly in the
+bachelor report. 
+
+\subsection{Content}
+The bachelor report must focus on one or more of
+the mandatory courses of the program:
+\begin{itemize}
+\item System Integration
+\item Test
+\item Databases for Developers
+\item Large Systems Development\\
+\end{itemize}
+
+The bachelor project is typically centred on the
+development of a product, the product being a
+final developed and deployed product, a part of
+such, or a prototype\\
+
+The bachelor report should contain:
+\begin{itemize}
+\item A thorough description of the work done
+\item A thorough evaluation and reflection of that work
+\end{itemize}
+
+\section{Task 2}
+\subsection{Graphics}
 
 % reference https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions#Figures
 
@@ -111,16 +165,16 @@
 \end{figure}
 
 \pagebreak
-\section{References}
+\subsection{References}
 
 number for figure \ref{figure:cap-center} \\
 page number for figure \pageref{figure:cap-center}
 
-\section{Section}
+\subsection{Section}
 
 Hello World!
 
-\subsection{Subsection}
+\subsubsection{Subsection}
 
 Structuring a document is easy!
 
@@ -137,13 +191,13 @@ More text.
 \paragraph{Paragraph}
 \lipsum[1]
 
-\section{Another section}
+\subsection{Another section}
 
-\subsection*{Non numeric Section}
+\subsubsection*{Non numeric Section}
 
-\section{Lists}
+\subsection{Lists}
 
-\subsection*{Bullet Points}
+\subsubsection*{Bullet Points}
 \begin{itemize}
 \item item a
 \item item b
@@ -151,7 +205,7 @@ More text.
 \item item d
 \end{itemize}
 
-\subsection*{Alternative Points}
+\subsubsection*{Alternative Points}
 \begin{itemize}
 \item[--] item a
 \item[--] item b
@@ -159,7 +213,7 @@ More text.
 \item[--] item d
 \end{itemize}
 
-\subsection*{Numbered List}
+\subsubsection*{Numbered List}
 \begin{enumerate}
 \item item a
 \item item b
@@ -167,7 +221,7 @@ More text.
 \item item d
 \end{enumerate}
 
-\subsection*{Alternative Numbered List}
+\subsubsection*{Alternative Numbered List}
 \begin{enumerate}[I]
 \item item a
 \item item b
@@ -175,7 +229,7 @@ More text.
 \item item d
 \end{enumerate}
 
-\subsection*{Alternative Numbered List}
+\subsubsection*{Alternative Numbered List}
 \begin{enumerate}[a.]
 \item item a
 \item item b
@@ -183,8 +237,8 @@ More text.
 \item item d
 \end{enumerate}
 
-\section{Tables}
-\subsection{Various horizontal alignments}
+\subsection{Tables}
+\subsubsection{Various horizontal alignments}
 \begin{tabularx}{0.8\textwidth} {
   | >{\raggedright\arraybackslash}X
   | >{\centering\arraybackslash}X
@@ -196,7 +250,7 @@ More text.
 \hline
 \end{tabularx}
 
-\subsection{Cell spanning}
+\subsubsection{Cell spanning}
 
 \subsubsection{Multicolumn}
 \begin{tabular}{|l|l|l|}
@@ -221,7 +275,7 @@ first column & second column & third column \\
 
 
 
-\subsubsection{Description and Labels}
+\subsubsubsection{Description and Labels}
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
@@ -237,7 +291,7 @@ First data & 932\\ \hline
 table number reference \ref{table:simple} \\
 table page reference \pageref{table:simple}
 
-\section{Code Listing}
+\subsection{Code Listing}
 \begin{verbatim}
 
 function foo() {
@@ -256,29 +310,29 @@ foo()
 \end{lstlisting}
 
 
-\section{Bibliography}
+\subsection{Bibliography}
 
-\subsection{Book}
+\subsubsection{Book}
 \begin{thebibliography}{1}
 \bibitem{latexcompanion} 
 Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
 \textit{The \LaTeX\ Companion}. 
 Addison-Wesley, Reading, Massachusetts, 1993.
 
-\subsection{Article}
+\subsubsection{Article}
 \bibitem{einstein} 
 Albert Einstein. 
 \textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
 [\textit{On the electrodynamics of moving bodies}]. 
 Annalen der Physik, 322(10):891–921, 1905.
 
-\subsection{Link}
+\subsubsection{Link}
 \bibitem{knuthwebsite} 
 Knuth: Computers and Typesetting,
 \\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
 \end{thebibliography}
 
-\section{ToDo Notes}
+\subsection{ToDo Notes}
 \todo{Write more to-do examples}
 
 \end{document}
